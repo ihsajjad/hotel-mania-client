@@ -31,7 +31,7 @@ const NavBar = () => {
             {options}
           </ul>
         </div>
-        <Link to="/" className=" text-xl font-bold">
+        <Link to="/" className="text-[#8BCF17] text-xl font-bold">
           Hotel<span>Mania</span>
         </Link>
       </div>
@@ -39,7 +39,7 @@ const NavBar = () => {
         <ul className="menu menu-horizontal px-1">{options}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <Link to="/login">Login</Link>
       </div>
     </div>
   );

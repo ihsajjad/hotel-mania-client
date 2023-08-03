@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="footer p-10 bg-base-200 text-base-content">
+    <footer className="bg-slate-900  text-base-200">
+      <div className="footer p-10 ">
         <div>
-          <Link to="/" className=" text-xl font-bold">
+          <Link to="/" className=" text-xl font-bold text-[#8BCF17]">
             Hotel<span>Mania</span>
           </Link>
           <p>Providing reliable service since 2010</p>
@@ -27,7 +27,7 @@ const Footer = () => {
           <span className="footer-title">Payment Method</span>
         </div>
       </div>
-      <div className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
+      <div className="footer px-10 py-4 border-t border-[#8BCF17]">
         <div className="items-center grid-flow-col">
           <p> Copyright &copy; 2023 || All right reserved</p>
         </div>
