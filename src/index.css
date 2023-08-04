@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-btn-outline {
+  @apply bg-[#8BCF17] text-white py-1 px-2 rounded-lg border-2 border-[#8BCF17] hover:bg-white hover:text-[#8BCF17];
+}

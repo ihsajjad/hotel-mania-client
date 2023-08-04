@@ -1,6 +1,8 @@
 import { FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+//https://preview.themeforest.net/item/traveline-tour-travel-hotel-booking-template-/full_screen_preview/7855437?_ga=2.220699739.2114478542.1691038848-397218336.1691038848
+
 const Footer = () => {
   return (
     <footer className="bg-slate-900  text-base-200">
