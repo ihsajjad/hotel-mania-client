@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900  text-base-200">
+    <footer className="bg-slate-900 text-base-200">
       <div className="footer p-10 ">
         <div>
-          <Link to="/" className=" text-xl font-bold text-[#8BCF17]">
+          <Link to="/" className=" text-xl font-bold text-[var(--main-color)]">
             Hotel<span>Mania</span>
           </Link>
           <p>Providing reliable service since 2010</p>

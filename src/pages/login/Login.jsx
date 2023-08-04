@@ -9,7 +9,7 @@ const Login = () => {
   const handleSignIn = () => {};
   return (
     <div className="hero min-h-screen bg-base-200 md:py-12 py-5">
-      <div className="card w-full max-w-sm shadow-2xl bg-base-100 border-[#8BCF17] border-2">
+      <div className="card w-full max-w-sm shadow-2xl bg-base-100 border-[var(--main-color)] border-2">
         <form onSubmit={handleSignIn} className="card-body">
           <h2 className="text-3xl font-bold text-center">Please Login!</h2>
           <div className="form-control">
@@ -59,7 +59,7 @@ const Login = () => {
 
         <p className="text-center mb-4">
           New to SC360? please{" "}
-          <Link to="/register" className="underline text-[#8BCF17]">
+          <Link to="/sign-up" className="underline text-[var(--main-color)]">
             Register
           </Link>
         </p>
