@@ -8,7 +8,7 @@ const SignUp = () => {
   return (
     <div className="hero min-h-screen bg-base-200 md:py-12 p-5">
       <div className="card md:w-2/4 w-full shadow-2xl bg-base-100 border-[var(--main-color)] border-2">
-        <h2 className="text-3xl font-bold text-center mt-3">
+        <h2 className="text-3xl font-bold text-center mt-8">
           Please Register!
         </h2>
         <form onSubmit={handleSignUp} className="card-body">

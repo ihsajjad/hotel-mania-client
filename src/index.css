@@ -13,7 +13,7 @@ a {
   @apply hover:text-[var(--main-color)] duration-300;
 }
 .custom-btn-outline {
-  @apply bg-[var(--main-color)] text-white py-1 px-2 rounded-lg border-2 border-[var(--main-color)] hover:bg-white hover:text-[var(--main-color)];
+  @apply bg-[var(--main-color)] text-white py-1 px-2 rounded-lg border-2 border-[var(--main-color)] hover:bg-transparent hover:text-[var(--main-color)] duration-500;
 }
 
 .nav-item {
@@ -22,4 +22,25 @@ a {
 
 .active-item {
   @apply border-b-2 border-[var(--main-color)] text-[var(--main-color)];
+}
+
+.shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.shape svg {
+  position: relative;
+  display: block;
+  width: calc(120% + 1.3px);
+  height: 58px;
+}
+
+.shape .shape-fill {
+  fill: #ffffff;
 }

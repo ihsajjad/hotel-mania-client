@@ -1,0 +1,120 @@
+[
+  {
+    "id": 1,
+    "name": "Sundarbans Eco Resort",
+    "imgs": [
+      "https://images.unsplash.com/photo-1615874959474-d609969a20ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVkJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
+      "https://images.unsplash.com/flagged/photo-1590227000970-3ae55d48501e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGJlZCUyMHJvb218ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60",
+      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGJlZCUyMHJvb218ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
+    ],
+    "description": "Sundarbans Eco Resort offers an immersive experience in the beauty of the Sundarbans mangrove forest. With a rating of 4.7, it provides amenities like free Wi-Fi, nature tours, a swimming pool, and a restaurant. Located in Sundarbans, Khulna.",
+    "rating": 4.7,
+    "price": "180",
+    "amenities": ["Free Wi-Fi", "Nature Tours", "Swimming Pool", "Restaurant"],
+    "location": "Sundarbans, Khulna",
+    "contact": {
+      "phone": "+880-1234-567890",
+      "email": "info@sundarbansresort.com"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Chittagong Hill Retreat",
+    "imgs": [
+      "https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmVkJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
+      "https://images.unsplash.com/photo-1618221770758-01929bf5ed39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJlZCUyMHJvb218ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60",
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJlZCUyMHJvb218ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
+    ],
+    "description": "Chittagong Hill Retreat offers tranquility amidst lush green hills in the Chittagong Hill Tracts. This hotel boasts a 4.6 rating and provides amenities like free Wi-Fi, hiking trails, scenic views, and a restaurant.",
+    "rating": 4.6,
+    "price": "150",
+    "amenities": ["Free Wi-Fi", "Hiking Trails", "Scenic Views", "Restaurant"],
+    "location": "Chittagong Hill Tracts",
+    "contact": {
+      "phone": "+880-9876-543210",
+      "email": "info@chittagongretreat.com"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Cox's Bazar Paradise Hotel",
+    "imgs": [
+      "https://images.unsplash.com/photo-1595526051245-4506e0005bd0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmVkJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
+      "https://images.unsplash.com/flagged/photo-1573168710865-2e4c680d921a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJlZCUyMHJvb218ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60",
+      "https://example.com/hotel3_3.jpg"
+    ],
+    "description": "Cox's Bazar Paradise Hotel is perfect for beach lovers, situated in Cox's Bazar, Chittagong. With a rating of 4.8, it offers amenities like free Wi-Fi, beachfront access, an infinity pool, and fine dining options.",
+    "rating": 4.8,
+    "price": "250",
+    "amenities": ["Free Wi-Fi", "Beachfront", "Infinity Pool", "Fine Dining"],
+    "location": "Cox's Bazar, Chittagong",
+    "contact": {
+      "phone": "+880-9876-543210",
+      "email": "info@coxsbazarhotel.com"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Dhaka Urban Oasis",
+    "imgs": [
+      "https://plus.unsplash.com/premium_photo-1675615667748-83da03046d30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmVkJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
+      "https://images.unsplash.com/photo-1591079381491-cb2c19ce7f15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YmVkJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
+      "https://images.unsplash.com/photo-1613685703237-6628de38ddb7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJlZCUyMHJvb218ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
+    ],
+    "description": "Dhaka Urban Oasis caters to those seeking vibrant city life in Dhaka City. This hotel boasts a 4.5 rating and provides amenities such as free Wi-Fi, city tours, a rooftop lounge, and a fitness center.",
+    "rating": 4.5,
+    "price": "120",
+    "amenities": [
+      "Free Wi-Fi",
+      "City Tours",
+      "Rooftop Lounge",
+      "Fitness Center"
+    ],
+    "location": "Dhaka City",
+    "contact": {
+      "phone": "+880-5555-789123",
+      "email": "info@dhakaoasis.com"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Sylhet Tea Garden Retreat",
+    "imgs": [
+      "https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmVkJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
+      "https://images.unsplash.com/photo-1618221118493-9cfa1a1c00da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmVkJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
+      "https://images.unsplash.com/photo-1617098900591-3f90928e8c54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlZCUyMHJvb218ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
+    ],
+    "description": "Sylhet Tea Garden Retreat lets guests lose themselves in the serenity of tea gardens in Sylhet. With a rating of 4.4, it offers amenities like free Wi-Fi, tea garden tours, a swimming pool, and a restaurant.",
+    "rating": 4.4,
+    "price": "190",
+    "amenities": [
+      "Free Wi-Fi",
+      "Tea Garden Tours",
+      "Swimming Pool",
+      "Restaurant"
+    ],
+    "location": "Sylhet",
+    "contact": {
+      "phone": "+880-7654-321098",
+      "email": "info@sylhethotel.com"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Barisal Riverfront Resort",
+    "imgs": [
+      "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmVkJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
+      "https://images.unsplash.com/photo-1618220924273-338d82d6b886?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJlZCUyMHJvb218ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60",
+      "https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJlZCUyMHJvb218ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
+    ],
+    "description": "Barisal Riverfront Resort offers a tranquil riverfront living experience in Barisal. With a rating of 4.3, it provides amenities like free Wi-Fi, river cruises, a swimming pool, and a restaurant.",
+    "rating": 4.3,
+    "price": "170",
+    "amenities": ["Free Wi-Fi", "River Cruises", "Swimming Pool", "Restaurant"],
+    "location": "Barisal",
+    "contact": {
+      "phone": "+880-7654-321098",
+      "email": "info@barisalresort.com"
+    }
+  }
+]

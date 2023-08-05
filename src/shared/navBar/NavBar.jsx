@@ -1,4 +1,4 @@
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaShoppingCart } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 const NavBar = () => {
   const options = (
@@ -54,7 +54,7 @@ const NavBar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="text-black menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="text-black menu-sm dropdown-content mt-3 z-10 p-2 shadow bg-base-100 rounded-box w-52"
           >
             {options}
           </ul>
@@ -69,9 +69,17 @@ const NavBar = () => {
       </div>
 
       <div className="navbar-end">
-        <Link to="/login" className="font-bold">
-          Login
-        </Link>
+        <div className="flex space-x-4 items-center">
+          <Link to="" className="indicator">
+            <FaShoppingCart className="text-2xl" />
+            <span className="badge badge-sm indicator-item text-slate-700 font-bold bg-slate-300">
+              8
+            </span>
+          </Link>
+          <Link to="/login" className="font-bold">
+            Login
+          </Link>
+        </div>
       </div>
     </div>
   );
