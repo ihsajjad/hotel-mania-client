@@ -9,41 +9,17 @@
   --main-color: #8bcf17;
 }
 
+a {
+  @apply hover:text-[var(--main-color)] duration-300;
+}
 .custom-btn-outline {
   @apply bg-[var(--main-color)] text-white py-1 px-2 rounded-lg border-2 border-[var(--main-color)] hover:bg-white hover:text-[var(--main-color)];
 }
 
 .nav-item {
-  @apply hover:text-[var(--main-color)] font-bold;
+  @apply font-bold;
 }
 
-.activeItem {
-  @apply hover:border-b-2 border-[var(--main-color)];
-}
-
-/* .active {
-  border-bottom: 3px solid var(--main-color);
-  transition: border 0.6s linear 1s;
-  position: relative;
-} */
-
-.home-banner {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.home-banner svg {
-  position: relative;
-  display: block;
-  width: calc(137% + 1.3px);
-  height: 93px;
-}
-
-.home-banner .shape-fill {
-  fill: #ffffff;
+.active-item {
+  @apply border-b-2 border-[var(--main-color)] text-[var(--main-color)];
 }

@@ -4,25 +4,42 @@ const NavBar = () => {
   const options = (
     <>
       <li>
-        {/* <NavLink
+        <NavLink
           to="/"
-          className={({ isActive }) => (isActive ? "activeItem" : "")}
+          className={({ isActive }) =>
+            ` ${isActive ? "active-item" : ""} nav-item`
+          }
         >
           Home
-        </NavLink> */}
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/" className="nav-item">
+        <NavLink
+          to="/book-now"
+          className={({ isActive }) =>
+            ` ${isActive ? "active-item" : ""} nav-item`
+          }
+        >
           Book Now
         </NavLink>
       </li>
       <li>
-        <NavLink to="/blog" className="nav-item">
+        <NavLink
+          to="/blog"
+          className={({ isActive }) =>
+            ` ${isActive ? "active-item" : ""} nav-item`
+          }
+        >
           Blog
         </NavLink>
       </li>
       <li>
-        <NavLink to="/contact-us" className="nav-item">
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            ` ${isActive ? "active-item" : ""} nav-item`
+          }
+        >
           Contact Us
         </NavLink>
       </li>
@@ -50,8 +67,11 @@ const NavBar = () => {
         {/* menu */}
         <ul className="space-x-4 menu-horizontal px-1">{options}</ul>
       </div>
+
       <div className="navbar-end">
-        <Link to="/login">Login</Link>
+        <Link to="/login" className="font-bold">
+          Login
+        </Link>
       </div>
     </div>
   );

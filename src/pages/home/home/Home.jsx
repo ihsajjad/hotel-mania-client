@@ -1,5 +1,5 @@
 const Home = () => {
-  return <div>This is home page</div>;
+  return <section className="h-screen"></section>;
 };
 
 export default Home;
