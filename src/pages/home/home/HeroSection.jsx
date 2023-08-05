@@ -46,8 +46,8 @@ const HeroSection = () => {
             effect={"cube"}
             grabCursor={true}
             cubeEffect={{
-              shadow: false,
-              slideShadows: false,
+              shadow: true,
+              slideShadows: true,
               shadowOffset: 20,
               shadowScale: 0.94,
             }}
