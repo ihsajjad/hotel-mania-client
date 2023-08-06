@@ -10,7 +10,6 @@ const HeroSection = () => {
   const [index, setIndex] = useState(0);
   const [rooms, setRooms] = useState([]);
 
-  console.log(index);
   useEffect(() => {
     fetch("hoteles.json")
       .then((res) => res.json())
@@ -68,7 +67,7 @@ const HeroSection = () => {
       </div>
 
       {/* Background shape */}
-      <div className="shape">
+      <div className="hero-shape">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"

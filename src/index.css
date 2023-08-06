@@ -24,7 +24,8 @@ a {
   @apply border-b-2 border-[var(--main-color)] text-[var(--main-color)];
 }
 
-.shape {
+/* ============================ Start Hero Section Background Shape ============================ */
+.hero-shape {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -34,13 +35,36 @@ a {
   transform: rotate(180deg);
 }
 
-.shape svg {
+.hero-shape svg {
   position: relative;
   display: block;
   width: calc(120% + 1.3px);
-  height: 58px;
+  height: 95px;
 }
 
-.shape .shape-fill {
+/* ============================ End Hero Section Background Shape ============================ */
+
+/* ============================ Start Feedback Section Background Shape ============================ */
+.feedback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.feedback svg {
+  position: relative;
+  display: block;
+  width: calc(120% + 1.3px);
+  height: 95px;
+}
+
+/* ============================ End Feedback Section Background Shape ============================ */
+
+.hero-shape .shape-fill,
+.feedback .shape-fill {
   fill: #ffffff;
 }
