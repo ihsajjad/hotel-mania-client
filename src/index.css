@@ -24,6 +24,14 @@ a {
   @apply border-b-2 border-[var(--main-color)] text-[var(--main-color)];
 }
 
+.custom-card {
+  @apply p-2 border-2  rounded flex flex-col duration-500;
+}
+
+.custom-card:hover {
+  @apply bg-slate-200 scale-105 border-[var(--main-color)];
+}
+
 /* ============================ Start Hero Section Background Shape ============================ */
 .hero-shape {
   position: absolute;
