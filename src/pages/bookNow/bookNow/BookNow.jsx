@@ -3,7 +3,6 @@ import Modal from "./Modal";
 
 const BookNow = () => {
   const [rooms, setRooms] = useState([]);
-  const [id, setId] = useState("");
   const [room, setRoom] = useState({});
 
   useEffect(() => {

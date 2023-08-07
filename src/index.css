@@ -76,3 +76,14 @@ a {
 .feedback .shape-fill {
   fill: #ffffff;
 }
+
+.swiper-slide-thumb-inactive {
+  /* width: 25%;
+  height: 100%; */
+  opacity: 0.4;
+}
+
+.swiper-slide-thumb-active {
+  border: 2px solid #8bcf17;
+  opacity: 1;
+}
