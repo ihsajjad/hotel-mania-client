@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
+import Modal from "./Modal";
 
 const BookNow = () => {
   const [rooms, setRooms] = useState([]);
+  const [id, setId] = useState("");
+  const [room, setRoom] = useState({});
 
   useEffect(() => {
     fetch("hoteles.json")
       .then((res) => res.json())
       .then((data) => setRooms(data));
   }, []);
-
-  console.log(rooms);
 
   return (
     <div className="p-5 min-h-screen md:pt-8 bg-slate-100">
@@ -71,13 +72,25 @@ const BookNow = () => {
                 </div>
                 <div className="flex items-center justify-between border-t py-2 mt-auto">
                   <p className="text-3xl">${room.price}</p>
-                  <button className="custom-btn-outline">Details</button>
+
+                  {/* Details btn to open the modal */}
+                  <button
+                    className="custom-btn-outline"
+                    onClick={() => {
+                      window.id.showModal();
+                      setRoom(room);
+                    }}
+                  >
+                    Details
+                  </button>
                 </div>
               </div>
             ))}
           </div>
         </div>
       </div>
+      {/* modal */}
+      <Modal room={room}></Modal>
     </div>
   );
 };
