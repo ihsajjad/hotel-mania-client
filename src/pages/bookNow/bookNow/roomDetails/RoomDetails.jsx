@@ -40,10 +40,10 @@ const RoomDetails = () => {
 
   console.log(room);
   return (
-    <div className="md:px-10">
+    <div className="md:px-10 p-2">
       {/* Room content area */}
-      <div className="flex flex-row-reverse justify-between md:py-8 gap-5">
-        <div className="w-1/3 ">
+      <div className="flex md:flex-row-reverse flex-col-reverse justify-between md:py-8 md:gap-5">
+        <div className="md:w-1/3 w-full">
           <h3 className="text-2xl">{name}</h3>
 
           <div className="my-2">
@@ -55,7 +55,7 @@ const RoomDetails = () => {
             </ul>
           </div>
 
-          <div className="space-y-2 ">
+          <div className="space-y-2">
             <p className="text-justify">{description}</p>
             <p>
               <span className="font-bold">Location:</span> {location}
@@ -69,7 +69,7 @@ const RoomDetails = () => {
         </div>
 
         {/* Room slider area */}
-        <div className="w-2/3 mx-auto rounded">
+        <div className="md:w-2/3 w-full mx-auto rounded">
           <Swiper
             style={{
               "--swiper-navigation-color": "#8bcf17",
@@ -80,13 +80,13 @@ const RoomDetails = () => {
             navigation={true}
             thumbs={{ swiper: thumbsSwiper }}
             modules={[FreeMode, Navigation, Thumbs]}
-            className="mySwiper2"
+            className="mySwiper2 md:h-[80vh] h-[50vh]"
           >
             {imgs?.map((img, i) => (
               <SwiperSlide key={i}>
                 <img
                   src={img}
-                  className="h-[80vh] w-full rounded"
+                  className="h-full w-full rounded"
                   onMouseMove={() => setIndex(i)}
                 />
               </SwiperSlide>
