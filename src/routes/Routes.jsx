@@ -5,6 +5,7 @@ import Login from "../pages/login/login";
 import SignUp from "../pages/signUp/SignUp";
 import Error from "../shared/404/Error";
 import BookNow from "../pages/bookNow/bookNow/BookNow";
+import Dashboard from "../layouts/Dashboard";
 
 export const router = createBrowserRouter([
   {
@@ -29,5 +30,10 @@ export const router = createBrowserRouter([
         element: <SignUp />,
       },
     ],
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
+    // element: []
   },
 ]);

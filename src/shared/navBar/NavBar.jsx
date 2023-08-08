@@ -46,6 +46,16 @@ const NavBar = () => {
           Contact Us
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to="/dashboard"
+          className={({ isActive }) =>
+            ` ${isActive ? "active-item" : ""} nav-item`
+          }
+        >
+          Dashboard
+        </NavLink>
+      </li>
     </>
   );
   return (
