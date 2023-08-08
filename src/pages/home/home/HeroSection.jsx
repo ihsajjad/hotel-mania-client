@@ -5,6 +5,7 @@ import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import RoomRating from "../../../components/ratings/RoomRating";
 
 const HeroSection = () => {
   const [index, setIndex] = useState(0);
@@ -18,12 +19,15 @@ const HeroSection = () => {
 
   return (
     <section className="relative md:h-[90vh] h-fit pb-12 md:p-10 p-2 bg-slate-300">
-      <div className="flex gap-5 md:flex-row flex-col-reverse relative md:my-10 ">
+      <div className="flex gap-5 md:flex-row flex-col-reverse justify-between relative md:my-10 ">
         <div className="md:w-1/2 md:h-full space-y-3">
           <h3 className="text-3xl">{rooms[index]?.name}</h3>
           <p className="text-slate-600 mb-8 text-justify">
             {rooms[index]?.description}
           </p>
+
+          <RoomRating ratings={rooms[index]?.ratings} />
+
           <p className="">
             <span className="text-4xl font-bold">${rooms[index]?.price}</span>
             /Per Night
@@ -42,7 +46,7 @@ const HeroSection = () => {
             </ul>
           </div>
         </div>
-        <div className="md:w-1/2 h-[50vh]">
+        <div className="md:w-1/2 h-[50vh] ">
           <Swiper
             effect={"cube"}
             grabCursor={true}

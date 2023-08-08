@@ -81,9 +81,11 @@ const Modal = ({ room }) => {
             <h3 className="font-bold text-xl">{name}</h3>
             <p className="py-4 text-justify">{description}</p>
             <p className="py-4 text-2xl">${price}</p>
-            <div>
+            <div className="flex space-x-2">
               <p className="custom-btn-outline w-fit">Add To Cart</p>
-              <Link to={`/book-now/${_id}`}>More Details</Link>
+              <Link to={`/book-now/${_id}`} className="custom-btn-outline">
+                More Details
+              </Link>
             </div>
           </div>
         </div>

@@ -13,6 +13,8 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 
+import RoomRating from "../../../../components/ratings/RoomRating";
+
 const RoomDetails = () => {
   const { id } = useParams();
   const [thumbsSwiper, setThumbsSwiper] = useState();
@@ -41,9 +43,10 @@ const RoomDetails = () => {
     <div className="md:px-10">
       {/* Room content area */}
       <div className="flex flex-row-reverse justify-between md:py-8 gap-5">
-        <div className="w-1/3 py-5">
+        <div className="w-1/3 ">
           <h3 className="text-2xl">{name}</h3>
-          <div className="mt-auto">
+
+          <div className="my-2">
             <h4 className="font-semibold">Amenities</h4>
             <ul className="list-disc pl-5">
               {amenities?.map((amenitie, i) => (
@@ -52,11 +55,14 @@ const RoomDetails = () => {
             </ul>
           </div>
 
-          <div className="space-y-3 pr-5">
+          <div className="space-y-2 ">
             <p className="text-justify">{description}</p>
             <p>
               <span className="font-bold">Location:</span> {location}
             </p>
+
+            <RoomRating ratings={ratings} />
+
             <p className="text-2xl">${price}</p>
             <button className="custom-btn-outline w-fit">Add To Cart</button>
           </div>
