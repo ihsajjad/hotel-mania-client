@@ -1,15 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Modal from "./Modal";
+import useLoadAllRooms from "../../../hooks/useLoadAllRooms";
 
 const BookNow = () => {
-  const [rooms, setRooms] = useState([]);
   const [room, setRoom] = useState({});
-
-  useEffect(() => {
-    fetch("hoteles.json")
-      .then((res) => res.json())
-      .then((data) => setRooms(data));
-  }, []);
+  const { rooms } = useLoadAllRooms();
 
   return (
     <div className="p-5 min-h-screen md:pt-8 bg-slate-100">
@@ -52,7 +47,7 @@ const BookNow = () => {
           </h3>
           <div className="p-3 bg-white grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
             {rooms.map((room) => (
-              <div key={room.id} className="custom-card">
+              <div key={room._id} className="custom-card">
                 <figure>
                   <img
                     src={room?.imgs[0]}

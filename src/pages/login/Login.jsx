@@ -85,7 +85,7 @@ const Login = () => {
         <div className="divider">OR</div>
         <SocialLogin />
         <p className="text-center mb-4">
-          New to SC360? please{" "}
+          New to Hotel Mania? please{" "}
           <Link to="/sign-up" className="underline text-[var(--main-color)]">
             Register
           </Link>

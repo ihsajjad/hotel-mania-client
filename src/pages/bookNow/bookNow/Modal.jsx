@@ -17,7 +17,6 @@ const Modal = ({ room }) => {
   const [index, setIndex] = useState(0);
   const { name, price, description, imgs } = room;
 
-  console.log(index);
   return (
     <dialog id="id" className="modal h-screen">
       <form method="dialog" className="modal-box w-11/12 max-w-5xl">
