@@ -7,6 +7,7 @@ import Error from "../shared/404/Error";
 import BookNow from "../pages/bookNow/bookNow/BookNow";
 import Dashboard from "../layouts/Dashboard";
 import PendingBookings from "../pages/dashboard/user/pendingBookings/PendingBookings";
+import RoomDetails from "../pages/bookNow/bookNow/roomDetails/RoomDetails";
 
 export const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
       {
         path: "/book-now",
         element: <BookNow />,
+      },
+      {
+        path: "/book-now/:id",
+        element: <RoomDetails />,
       },
       {
         path: "/login",

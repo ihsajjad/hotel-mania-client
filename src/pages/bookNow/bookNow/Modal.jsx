@@ -11,11 +11,12 @@ import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 
 import { FaTimes } from "react-icons/fa";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Modal = ({ room }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState();
   const [index, setIndex] = useState(0);
-  const { name, price, description, imgs } = room;
+  const { name, price, description, imgs, _id } = room;
 
   return (
     <dialog id="id" className="modal h-screen">
@@ -80,7 +81,10 @@ const Modal = ({ room }) => {
             <h3 className="font-bold text-xl">{name}</h3>
             <p className="py-4 text-justify">{description}</p>
             <p className="py-4 text-2xl">${price}</p>
-            <p className="custom-btn-outline w-fit">Add To Cart</p>
+            <div>
+              <p className="custom-btn-outline w-fit">Add To Cart</p>
+              <Link to={`/book-now/${_id}`}>More Details</Link>
+            </div>
           </div>
         </div>
 
