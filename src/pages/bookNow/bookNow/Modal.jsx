@@ -27,7 +27,8 @@ const Modal = ({ room }) => {
         </button>
 
         <div className="modal-action flex md:flex-row flex-col">
-          <div className="w-1/2 px-5">
+          {/* Image container */}
+          <div className="w-1/2 px-5 rounded">
             <Swiper
               style={{
                 "--swiper-navigation-color": "#8bcf17",
@@ -44,7 +45,7 @@ const Modal = ({ room }) => {
                 <SwiperSlide key={i}>
                   <img
                     src={img}
-                    className="h-72 w-full"
+                    className="h-72 w-full rounded"
                     onMouseMove={() => setIndex(i)}
                   />
                 </SwiperSlide>
@@ -75,11 +76,12 @@ const Modal = ({ room }) => {
             </Swiper>
           </div>
 
-          <div className="w-1/2">
-            <h3 className="font-bold text-lg">{name}</h3>
-            <p className="py-4">{description}</p>
-            <p className="py-4">${price}</p>
-            <p className="custom-btn-outline w-fit">Add To Card</p>
+          {/* Modal content area */}
+          <div className="w-1/2 pr-5">
+            <h3 className="font-bold text-xl">{name}</h3>
+            <p className="py-4 text-justify">{description}</p>
+            <p className="py-4 text-2xl">${price}</p>
+            <p className="custom-btn-outline w-fit">Add To Cart</p>
           </div>
         </div>
 

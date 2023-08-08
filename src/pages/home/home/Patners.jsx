@@ -30,7 +30,7 @@ const Patners = () => {
         Our <span className="text-[var(--main-color)]">Patners</span>
       </h3>
 
-      <Marquee pauseOnHover={true}>
+      <Marquee>
         <div className="flex my-10 space-x-8">
           {logos.map((logo, i) => (
             <img key={i} src={logo} alt="" className="h-20 w-32" />
