@@ -6,6 +6,7 @@ import SignUp from "../pages/signUp/SignUp";
 import Error from "../shared/404/Error";
 import BookNow from "../pages/bookNow/bookNow/BookNow";
 import Dashboard from "../layouts/Dashboard";
+import PendingBookings from "../pages/dashboard/user/pendingBookings/PendingBookings";
 
 export const router = createBrowserRouter([
   {
@@ -34,6 +35,11 @@ export const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <Dashboard />,
-    // element: []
+    children: [
+      {
+        path: "/dashboard/user/pending-bookings",
+        element: <PendingBookings />,
+      },
+    ],
   },
 ]);
