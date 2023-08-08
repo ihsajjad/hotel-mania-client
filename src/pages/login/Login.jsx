@@ -3,6 +3,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { useForm } from "react-hook-form";
+import SocialLogin from "../../shared/socialLogin/SocialLogin";
 
 const Login = () => {
   const [error, setError] = useState("");
@@ -82,7 +83,7 @@ const Login = () => {
         </form>
 
         <div className="divider">OR</div>
-
+        <SocialLogin />
         <p className="text-center mb-4">
           New to SC360? please{" "}
           <Link to="/sign-up" className="underline text-[var(--main-color)]">
