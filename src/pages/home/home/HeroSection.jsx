@@ -5,7 +5,7 @@ import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import RoomRating from "../../../components/ratings/RoomRating";
+import Review from "../../../components/ratings/Review";
 
 const HeroSection = () => {
   const [index, setIndex] = useState(0);
@@ -19,14 +19,14 @@ const HeroSection = () => {
 
   return (
     <section className="relative md:h-[90vh] h-fit pb-12 md:p-10 p-2 bg-slate-300">
-      <div className="flex gap-5 md:flex-row flex-col-reverse justify-between relative md:my-10 ">
-        <div className="md:w-1/2 md:h-full space-y-3">
+      <div className="flex gap-5 md:flex-row flex-col-reverse relative md:my-10 ">
+        <div className="md:w-1/2 md:h-full space-y-3 md:pr-10">
           <h3 className="text-3xl">{rooms[index]?.name}</h3>
           <p className="text-slate-600 mb-8 text-justify">
             {rooms[index]?.description}
           </p>
 
-          <RoomRating ratings={rooms[index]?.ratings} />
+          <Review ratings={rooms[index]?.ratings} />
 
           <p className="">
             <span className="text-4xl font-bold">${rooms[index]?.price}</span>
@@ -35,7 +35,7 @@ const HeroSection = () => {
           <button className="custom-btn-outline">
             <Link to="">Book Now</Link>
           </button>
-          <div className="absolute bottom-0 left-1/3 w-1/6 border-2 border-[var(--main-color)]  py-1 hidden md:block">
+          {/* <div className="absolute bottom-0 left-1/3 w-1/6 border-2 border-[var(--main-color)]  py-1 hidden md:block">
             <h4 className="text-xl text-slate-700 font-semibold border-b-2 border-[var(--main-color)] text-center">
               Amenities
             </h4>
@@ -44,31 +44,33 @@ const HeroSection = () => {
                 <li key={i}>{amenite}</li>
               ))}
             </ul>
-          </div>
+          </div> */}
         </div>
-        <div className="md:w-1/2 h-[50vh] ">
-          <Swiper
-            effect={"cube"}
-            grabCursor={true}
-            cubeEffect={{
-              shadow: true,
-              slideShadows: true,
-              shadowOffset: 20,
-              shadowScale: 0.94,
-            }}
-            pagination={true}
-            modules={[EffectCube, Pagination]}
-            className="mySwiper md:w-3/5 w-full h-full"
-          >
-            {rooms.map((room, i) => (
-              <SwiperSlide key={i} onMouseMove={() => setIndex(i)}>
-                <img
-                  src={room.imgs[0]}
-                  className="h-full w-full object-cover"
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+        <div className="md:w-1/2 h-[60vh] flex justify-end">
+          <div className="md:w-3/4 h-full w-full md:flex justify-end">
+            <Swiper
+              effect={"cube"}
+              grabCursor={true}
+              cubeEffect={{
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+              }}
+              pagination={true}
+              modules={[EffectCube, Pagination]}
+              className="mySwiper  w-full h-full"
+            >
+              {rooms.map((room, i) => (
+                <SwiperSlide key={i} onMouseMove={() => setIndex(i)}>
+                  <img
+                    src={room.imgs[0]}
+                    className="h-full w-full object-cover"
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
         </div>
       </div>
 

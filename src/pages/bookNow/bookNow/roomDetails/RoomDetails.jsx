@@ -13,7 +13,7 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 
-import RoomRating from "../../../../components/ratings/RoomRating";
+import Review from "../../../../components/ratings/Review";
 
 const RoomDetails = () => {
   const { id } = useParams();
@@ -40,9 +40,10 @@ const RoomDetails = () => {
 
   console.log(room);
   return (
-    <div className="md:px-10 p-2">
-      {/* Room content area */}
-      <div className="flex md:flex-row-reverse flex-col-reverse justify-between md:py-8 md:gap-5">
+    <main className="md:px-10 p-2">
+      {/* ====================== Start Hero section ====================== */}
+      <section className="flex md:flex-row-reverse flex-col-reverse justify-between md:py-8 md:gap-5">
+        {/* Room content area */}
         <div className="md:w-1/3 w-full">
           <h3 className="text-2xl">{name}</h3>
 
@@ -61,7 +62,7 @@ const RoomDetails = () => {
               <span className="font-bold">Location:</span> {location}
             </p>
 
-            <RoomRating ratings={ratings} />
+            <Review ratings={ratings} />
 
             <p className="text-2xl">${price}</p>
             <button className="custom-btn-outline w-fit">Add To Cart</button>
@@ -116,8 +117,8 @@ const RoomDetails = () => {
             ))}
           </Swiper>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

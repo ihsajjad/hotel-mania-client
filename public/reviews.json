@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Alice Johnson",
+    "rating": 4.5,
+    "comment": "I had a wonderful stay at this hotel! The staff was friendly and attentive, the room was clean and comfortable, and the location was perfect for exploring the city. I would definitely come back again.",
+    "date": "2023-08-10",
+    "socialLinks": {
+      "facebook": "https://www.facebook.com/alice.johnson",
+      "twitter": "https://twitter.com/alicejohnson"
+    },
+    "profileImg": "https://example.com/profiles/alice.jpg"
+  },
+  {
+    "name": "John Smith",
+    "rating": 3.0,
+    "comment": "Overall, my stay was decent. The room was a bit smaller than expected, but it was clean. The breakfast buffet could use some improvement. The hotel's proximity to the attractions was a plus.",
+    "date": "2023-08-08",
+    "socialLinks": {
+      "facebook": "https://www.facebook.com/john.smith",
+      "twitter": "https://twitter.com/johnsmith"
+    },
+    "profileImg": "https://example.com/profiles/john.jpg"
+  },
+  {
+    "name": "Emily White",
+    "rating": 5.0,
+    "comment": "Absolutely loved my experience here! The room was luxurious and had a stunning view. The staff went above and beyond to make my stay special. I would highly recommend this hotel to anyone.",
+    "date": "2023-08-06",
+    "socialLinks": {
+      "facebook": "https://www.facebook.com/emily.white",
+      "twitter": "https://twitter.com/emilywhite"
+    },
+    "profileImg": "https://example.com/profiles/emily.jpg"
+  },
+  {
+    "name": "David Brown",
+    "rating": 2.5,
+    "comment": "The hotel's location was convenient, but I was disappointed with the cleanliness of the room. The bathroom needed some attention. The service at the front desk was friendly, though.",
+    "date": "2023-08-04",
+    "socialLinks": {
+      "facebook": "https://www.facebook.com/david.brown",
+      "twitter": "https://twitter.com/davidbrown"
+    },
+    "profileImg": "https://example.com/profiles/david.jpg"
+  },
+  {
+    "name": "Sophia Miller",
+    "rating": 4.0,
+    "comment": "Had a pleasant stay at this hotel. The room was comfortable and well-maintained. The hotel's amenities, such as the pool and gym, were a nice bonus. Would consider staying here again.",
+    "date": "2023-08-02",
+    "socialLinks": {
+      "facebook": "https://www.facebook.com/sophia.miller",
+      "twitter": "https://twitter.com/sophiamiller"
+    },
+    "profileImg": "https://example.com/profiles/sophia.jpg"
+  }
+]
