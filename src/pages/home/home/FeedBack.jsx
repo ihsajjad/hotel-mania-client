@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
+import { FaFacebookF, FaQuoteLeft, FaTwitter } from "react-icons/fa";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
+// import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
 // import required modules
@@ -20,36 +22,65 @@ const FeedBack = () => {
   }, []);
 
   return (
-    <section className="relative  h-fit md:px-10 pt-10 p-2 bg-slate-300">
+    <section className="relative h-fit md:px-10 pt-10 p-2 bg-slate-300">
       <div className="md:mt-12 h-full">
         <h3 className="text-3xl text-center font-bold">
           Customer <span className="text-[var(--main-color)]">Reviews</span>
         </h3>
-        <div className="h-full">
-          <Swiper
-            pagination={{
-              dynamicBullets: true,
-            }}
-            modules={[Pagination]}
-            className="mySwiper h-full"
-          >
-            {reviews.map((review, i) => (
-              <SwiperSlide key={i} className="rounded-lg py-8 px-24 h-full">
-                <div className=" space-y-3 flex flex-col items-center text-center">
-                  <img
-                    src="https://lh3.googleusercontent.com/ogw/AGvuzYYJIMr8tbcCXULkvphh6CrbZjhxYpUsbxpcmtU5=s64-c-mo"
-                    alt=""
-                    className="h-24 w-24 rounded-full border-2 border-white"
-                  />
-                  <h5 className="text-xl">{review.name}</h5>
-                  <p>{review.comment}</p>
-                  <Review ratings={review.rating} />
-                  <span>{review.date}</span>
+        <Swiper
+          slidesPerView={"auto"}
+          centeredSlides={true}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          {reviews.map((review, i) => (
+            <SwiperSlide key={i} className="my-12">
+              <div className="md:w-1/2 mx-auto space-y-3 flex flex-col items-center border border-[var(--main-color)] p-8 bg-slate-200 rounded-lg">
+                {/* Card Header */}
+                <div className="w-full flex items-center justify-between">
+                  <div className="flex gap-2 items-center">
+                    <img
+                      src="https://lh3.googleusercontent.com/ogw/AGvuzYYJIMr8tbcCXULkvphh6CrbZjhxYpUsbxpcmtU5=s64-c-mo"
+                      alt=""
+                      className="h-16 w-16 rounded-full border-2 border-white"
+                    />
+
+                    <div>
+                      <h5 className="text-xl">{review.name}</h5>
+                      <p className="text-xm">CEO</p>
+                    </div>
+                  </div>
+                  <div className="text-center md:text-2xl">
+                    <div className="inline-flex gap-1 ">
+                      <a href="/">
+                        <FaFacebookF />
+                      </a>
+                      <a href="/">
+                        <FaTwitter />
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+
+                {/* Card body */}
+                <div className="w-full flex gap-2">
+                  <FaQuoteLeft className="w-24 text-2xl text-[var(--main-color)]" />
+                  <p className="text-justify"> {review.comment}</p>
+                </div>
+
+                {/* Card footer */}
+                <div className="text-center">
+                  <Review ratings={review.rating} />
+                  <p className="text-xs">{review.date}</p>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
 
       {/* background shape */}
